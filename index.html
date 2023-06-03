@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>GUESS THE NUMBER</title>
+  </head>
+
+  <body>
+    <div class="container bg-warning mt-5 p-5 rounded">
+      <h1 class="text-center">Guess your number</h1>
+      <hr class="text-dark" />
+
+      <button class="btn btn-light play-again-btn">Play Again</button>
+      <div class="text-center m-5">
+        <span
+          class="h-25 w-25 shadow p-4 fs-2 random-number rounded text-white bg-dark"
+          >🎸</span
+        >
+      </div>
+
+      <div class="row">
+        <div class="col-6">
+          <p class="lead text-white">Guess number between 1 to 20</p>
+
+          <input
+            type="number"
+            required
+            class="form-control input-number"
+            placeholder="Enter your number"
+          />
+          <button class="btn btn-primary form-control mt-3 check-btn">
+            Check!
+          </button>
+        </div>
+        <div class="col-6 container">
+          <h1 class="status">Your Status</h1>
+          <h2>Remaining: <span class="remaining-chance">20</span></h2>
+          <h2>Best score: <span class="best-score">0</span></h2>
+        </div>
+      </div>
+    </div>
+
+    <script src="javascript.js"></script>
+  </body>
+</html>
