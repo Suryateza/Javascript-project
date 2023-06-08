@@ -15,6 +15,8 @@ function decrementChance() {
   document.querySelector(".remaining-chance").textContent = remaningChance;
 }
 
+console.log("hello");
+
 function checkNumber() {
   let inputNumber = Number(document.querySelector(".input-number").value);
   decrementChance();
